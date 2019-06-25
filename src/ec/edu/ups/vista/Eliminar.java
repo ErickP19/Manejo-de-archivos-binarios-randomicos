@@ -327,10 +327,10 @@ public class Eliminar extends javax.swing.JInternalFrame {
             archivo.writeUTF("                                                  ");
             archivo.writeUTF("                                                  ");
             archivo.writeUTF("          ");
-            archivo.writeUTF("  ");
+            archivo.writeInt(0);
             archivo.writeUTF("          ");
             archivo.writeUTF("          ");
-            archivo.writeUTF("      ");
+            archivo.writeDouble(0.0);
             archivo.close();
         } catch (FileNotFoundException ex) {
             Logger.getLogger(Eliminar.class.getName()).log(Level.SEVERE, null, ex);
