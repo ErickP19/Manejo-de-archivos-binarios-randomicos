@@ -7,6 +7,7 @@ package ec.edu.ups.excepciones;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 /**
@@ -18,7 +19,7 @@ public class Persona {
     private String nombre;
     private String apellido;
     private int edad;
-    private String fecha;
+    private Date fecha;
     private String celular;
     private double salario;
     
@@ -123,18 +124,25 @@ public class Persona {
         
     }
 
-    public String getFecha() {
+    public Date getFecha() {
         return fecha;
     }
 
-    public void setFecha(String fecha)  throws ValidacionDeFecha {
-        if(fecha.contains("/")){
-            this.fecha = fecha;
-        }else{
-            throw new ValidacionDeFecha("Su fecha es incorrecta");
-        }
-        
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
     }
+
+    public Persona(String cedula, String nombre, String apellido, int edad, Date fecha, String celular, double salario) {
+        this.cedula = cedula;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.fecha = fecha;
+        this.celular = celular;
+        this.salario = salario;
+    }
+
+ 
         
     
     public String getCelular() {

@@ -14,7 +14,7 @@ import ec.edu.ups.excepciones.ValidacionDeFecha;
 import ec.edu.ups.excepciones.ValidacionDeNombres;
 import ec.edu.ups.excepciones.ValidacionNombresIncompletos;
 import ec.edu.ups.excepciones.ValidacionSueldo;
-import ec.edu.ups.excepciones.ValidacionesPersona;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;

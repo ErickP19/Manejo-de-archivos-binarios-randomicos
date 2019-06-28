@@ -1,5 +1,7 @@
 package ec.edu.ups.excepciones;
 
+import java.util.Date;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -11,7 +13,7 @@ package ec.edu.ups.excepciones;
  * @author erics
  */
 public class ValidacionDeFecha extends Exception {
-     public ValidacionDeFecha(String su_fecha_es_incorrecta){        
+     public ValidacionDeFecha(){        
         super("La fecha no es correcta \n"+"Por favor Verificar");        
     }
     
